@@ -30,7 +30,7 @@ RECONNECT_INTERVAL=5000
 
 ## Usage
 
-1. You can start the app by executing `npm run start` or `node .`.
+1. You can start the index by executing `npm run start` or `node .`.
 2. Now the endpoint should be available according to your environment variable configurations. Default is at `http://localhost:8000`.
 
 Also check out the `examples` directory for the basic usage examples.
@@ -103,11 +103,11 @@ For more examples, check out Baileys's docs [here](https://github.com/adiwajshin
 
 ## Known Issue
 
--   ~~Logging out from your phone manually when the session is still active **will kill the entire app** after a few minutes. As for now you should only destroy a session by using the **delete session endpoint** to avoid this issue. This issue only occurs for **Beta Multi-Device** users~~. This issue should be solved on Baileys version **4.1.0** (Tested).
+-   ~~Logging out from your phone manually when the session is still active **will kill the entire index** after a few minutes. As for now you should only destroy a session by using the **delete session endpoint** to avoid this issue. This issue only occurs for **Beta Multi-Device** users~~. This issue should be solved on Baileys version **4.1.0** (Tested).
 
 ## Notes
 
--   The app only provide a very simple validation, you may want to implement your own.
+-   The index only provide a very simple validation, you may want to implement your own.
 -   When sending message, your `message` property will not be validated, so make sure you sent the right data!
 -   There's no authentication, you may want to implement your own.
 -   The **Beta Multi-Device** client use provided Baileys's `makeInMemoryStore` method which will store your data in memory and a json file, you may want to use a better data management.

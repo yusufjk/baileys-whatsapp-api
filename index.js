@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import nodeCleanup from 'node-cleanup'
-import routes from './routes.js'
+import routes from './api/routes.js'
 import { init, cleanup } from './whatsapp.js'
 
 const app = express()
@@ -10,7 +10,7 @@ const port = parseInt(process.env.PORT ?? 8000)
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-app.use('/', routes)
+app.use('/api', routes)
 
 app.listen(port, host, () => {
     init()

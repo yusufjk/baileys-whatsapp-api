@@ -2,10 +2,10 @@
   "name": "baileys-whatsapp-api",
   "description": "Simple RESTful WhatsApp API",
   "private": true,
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
