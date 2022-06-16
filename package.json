@@ -1,21 +1,17 @@
 {
-  "name": "baileys-api",
+  "name": "baileys-whatsapp-api",
   "description": "Simple RESTful WhatsApp API",
   "private": true,
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node ."
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ookamiiixd/baileys-api.git"
+    "url": "git+https://github.com/yusufjk/baileys-whatsapp-api.git"
   },
-  "author": "ookamiiixd <ookamiiixd@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/ookamiiixd/baileys-api/issues"
-  },
-  "homepage": "https://github.com/ookamiiixd/baileys-api#readme",
+  "author": "Yusuf JK <yjkheraluwala@gmail.com>",
   "engines": {
     "node": ">=14.5.0"
   },
