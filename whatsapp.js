@@ -159,6 +159,14 @@ const getSession = (sessionId) => {
     return sessions.get(sessionId) ?? null
 }
 
+const getAllSessions = () => {
+    const sessionList = []
+    sessions.forEach((session, sessionId) => {
+        sessionList.push(sessionId)
+    })
+    return sessionList ?? null
+}
+
 const deleteSession = (sessionId, isLegacy = false) => {
     const sessionFile = (isLegacy ? 'legacy_' : 'md_') + sessionId
     const storeFile = `${sessionId}_store`
@@ -279,6 +287,7 @@ export {
     isSessionExists,
     createSession,
     getSession,
+    getAllSessions,
     deleteSession,
     getChatList,
     isExists,

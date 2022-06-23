@@ -8,6 +8,8 @@ const router = Router()
 
 router.get('/find/:id', sessionValidator, controller.find)
 
+router.get('/all', controller.getAll)
+
 router.get('/status/:id', sessionValidator, controller.status)
 
 router.post('/add', body('id').notEmpty(), body('isLegacy').notEmpty(), requestValidator, controller.add)
